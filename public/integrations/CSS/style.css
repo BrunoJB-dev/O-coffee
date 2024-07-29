@@ -1,6 +1,7 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body{
+    font-family: "Outfit", sans-serif;
     
 }
 
@@ -24,13 +25,15 @@ body{
     height: auto;
 }
 .header-title{
-    
+    margin-left: 2rem;
+    margin-top: 0.6rem;
 }
 .header-navbarr{
     display: flex;
-    gap: 1rem;
+    gap: 4rem;
     font-size: 1.2rem;
-    margin-top: 0.7rem;
+    margin-top: 1.4rem;
+    margin-right: 2rem;
     
 }
 .header-navbarr a{
@@ -76,9 +79,9 @@ main{
 }
 .img-intro{
     display: block;
-    margin: 0, auto;
+    margin: auto;
     max-width: 50%;
-    height: auto;
+    height: 100%;
     border-radius: 1.5rem;
 }
 .news{
