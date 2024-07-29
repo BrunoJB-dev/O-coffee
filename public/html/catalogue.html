@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O-coffee-catalogue</title>
+    <link rel="stylesheet" href="/public/css/CSS/reset.css">
+    <link rel="stylesheet" href="/public/css/CSS/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <span class="header-logo-title">  
+          <img class="header-logo" src="/docs/demande-client/00.assets/logo.svg" alt="Logo-O-coffee">
+          <h1 class="header-title">O'coffee</h1>
+        </span>
+          <nav class="header-navbarr">
+            <span>
+              <a href="">Accueil</a>
+            </span>
+            <span>
+              <a href="">Catalogue</a>
+            </span>
+            <span>
+              <a href="">Boutique</a>
+            </span>  
+  
+          </nav>
+      </header>
+
+      <main>
+        <section class="catalogue">
+            <h1 class="catalogue-title">Notre catalogue</h1>
+        </section>
+
+        <section class="products">
+            <form class="products-menu" action="">
+                <label for="categorie"></label>
+                <select class="products-select" name="categorie" id="categorie">
+                    <option value="null" selected disabled>Catégorie</option>
+                    <option value="latte">Latte</option>
+                    <option value="cappuccino">Cappuccino</option>
+                    <option value="espresso">Espresso</option>
+                    <option value="mocha">Mocha</option>
+                    <option value="macchiato">Machiatto</option>
+                </select>
+                
+            </form>
+
+            <article class="products-showing">
+                <div class="products-card">
+                    <h3 class="card-title">Espresso</h3>
+                    <p class="products-text">
+                        <ul>
+                            <li>Description : Café fort et concentré préparé en faisant passer de l'eau chaude à travers du café finement moulu.</li>
+                            <li>Référence : 100955890</li>
+                            <li>Origine : Italie</li>
+                            <li>Prix au kilo : 20.99 €</li>
+                            <li>Caractéristique principale : Corsé</li>
+                            <li>Disponible : Oui</li>
+                        </ul>
+                    </p>
+                    <a class="card-link" href="">Découvrir</a>
+                    </div>
+                    <div class="products-card">
+                        <h3 class="card-title">Columbian</h3>
+                        <p class="products-text">
+                            <ul>
+                                <li>Description : Café moyennement corsé avec une acidité vive et une saveur riche.</li>
+                                <li>Référence : 100955894</li>
+                                <li>Origine : Colombie</li>
+                                <li>Prix au kilo : 18.75 €</li>
+                                <li>Caractéristique principale : Acide</li>
+                                <li>Disponible : Oui</li>
+                            </ul>
+                            
+                            </p>
+                        <a class="card-link" href="">Découvrir</a>
+                        </div>
+                        <div class="products-card">
+                            <h3 class="card-title">Ethiopian Yirgacheffe</h3>
+                            <p class="products-text">
+                                <ul>
+                                    <li>Description : Réputé pour son arôme floral, son acidité vive et ses notes de saveur citronnée.</li>
+                                    <li>Référence : 105589090</li>
+                                    <li>Origine : Éthiopie</li>
+                                    <li>Prix au kilo : 22.50 €</li>
+                                    <li>Caractéristique principale : Fruité</li>
+                                    <li>Disponible : Oui</li>
+                                </ul>
+                            </p>
+                            <a class="card-link" href="">Découvrir</a>
+                            </div>
+                
+            </article>
+            <button class="products-btn">Voir tout</button>
+
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p class="footer-text">O'Coffee</p>
+    </footer>
+    
+</body>
+
+</html>
