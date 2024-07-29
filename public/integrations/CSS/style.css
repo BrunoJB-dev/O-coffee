@@ -173,5 +173,29 @@ main{
     padding: 0.4rem;
     border-radius: 0.5rem;
 }
+.img-detail{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    max-width: 100%;
+    border-radius: 1.5rem;
+
+}
+.products-detail{
+    background-color: brown;
+    color: antiquewhite;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-right: 20rem;
+    padding: 2rem;
+}
+.products-detail-title{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.products-detail-text{
+    font-size: 1.2rem;
+}
 
 
