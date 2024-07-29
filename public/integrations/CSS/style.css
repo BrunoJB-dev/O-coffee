@@ -197,5 +197,27 @@ main{
 .products-detail-text{
     font-size: 1.2rem;
 }
+.error-text{
+    font-size: 2rem;
+    font-weight: 530;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.error-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 15rem;
+}
+.error-message{
+    font-size: 3rem;
+    font-weight: 530;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 
 
