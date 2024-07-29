@@ -30,19 +30,78 @@
       </header>
 
       <main>
-        <section class="section-title">
-            <h1>Notre catalogue</h1>
+        <section class="catalogue">
+            <h1 class="catalogue-title">Notre catalogue</h1>
         </section>
 
-        <section class="section-products">
-            <form action="">
-                <select name="categorie" id="categorie">
-                    
+        <section class="products">
+            <form class="products-menu" action="">
+                <label for="categorie"></label>
+                <select class="products-select" name="categorie" id="categorie">
+                    <option value="null" selected disabled>Catégorie</option>
+                    <option value="latte">Latte</option>
+                    <option value="cappuccino">Cappuccino</option>
+                    <option value="espresso">Espresso</option>
+                    <option value="mocha">Mocha</option>
+                    <option value="macchiato">Machiatto</option>
                 </select>
+                
             </form>
+
+            <article class="products-showing">
+                <div class="products-card">
+                    <h3 class="card-title">Espresso</h3>
+                    <p class="products-text">
+                        <ul>
+                            <li>Description : Café fort et concentré préparé en faisant passer de l'eau chaude à travers du café finement moulu.</li>
+                            <li>Référence : 100955890</li>
+                            <li>Origine : Italie</li>
+                            <li>Prix au kilo : 20.99 €</li>
+                            <li>Caractéristique principale : Corsé</li>
+                            <li>Disponible : Oui</li>
+                        </ul>
+                    </p>
+                    <a class="card-link" href="">Découvrir</a>
+                    </div>
+                    <div class="products-card">
+                        <h3 class="card-title">Columbian</h3>
+                        <p class="products-text">
+                            <ul>
+                                <li>Description : Café moyennement corsé avec une acidité vive et une saveur riche.</li>
+                                <li>Référence : 100955894</li>
+                                <li>Origine : Colombie</li>
+                                <li>Prix au kilo : 18.75 €</li>
+                                <li>Caractéristique principale : Acide</li>
+                                <li>Disponible : Oui</li>
+                            </ul>
+                            
+                            </p>
+                        <a class="card-link" href="">Découvrir</a>
+                        </div>
+                        <div class="products-card">
+                            <h3 class="card-title">Ethiopian Yirgacheffe</h3>
+                            <p class="products-text">
+                                <ul>
+                                    <li>Description : Réputé pour son arôme floral, son acidité vive et ses notes de saveur citronnée.</li>
+                                    <li>Référence : 105589090</li>
+                                    <li>Origine : Éthiopie</li>
+                                    <li>Prix au kilo : 22.50 €</li>
+                                    <li>Caractéristique principale : Fruité</li>
+                                    <li>Disponible : Oui</li>
+                                </ul>
+                            </p>
+                            <a class="card-link" href="">Découvrir</a>
+                            </div>
+                
+            </article>
+            <button class="products-btn">Voir tout</button>
 
         </section>
       </main>
+
+      <footer class="footer">
+        <p class="footer-text">O'Coffee</p>
+    </footer>
     
 </body>
 
