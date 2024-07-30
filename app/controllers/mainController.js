@@ -6,7 +6,7 @@ const mainController = {
             const coffees = await dataMapper.getAllProducts();
             res.render('accueil', {coffees});
         }catch(error){
-            console.log('Error executing query');
+            console.log('Error executing query in mainController');
         }
     }
 };
