@@ -41,7 +41,25 @@
     <section class="news">
         <h2 class="news-title">Nouveautés</h2>
       <article class="news-article">
-        <div class="news-card">
+        <% coffees.forEach((coffee) => { %>
+
+        <div class="news-card"></div>
+            <h3 class="catd-title"><%= coffee.name %></h3>
+            <p class="card-text">
+                <ul>
+                    <li>Description: <%= coffee.description %></li>
+                    <li>Référence: <%= coffee.reference %></li>
+                    <li>Origine: <%= coffee.origin %></li>
+                    <li>Prix au kilo: <%= coffee.price %></li>
+                    <li>Caractéristique principale: <%= coffee.feature %></li>
+                    <li>Disponible: <%= coffee.available %></li>
+                </ul>
+            </p>
+
+
+            <% }) %>
+
+        <!--<div class="news-card">
             <h3 class="card-title">Nicaraguan Maragogipe</h3>
             <p class="card-text">
                 <ul>
@@ -129,6 +147,6 @@
         
     </article>
     </section>
-</main>
+</main> -->
 
 <%- include('../partials/footer') %>
