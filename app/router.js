@@ -3,7 +3,7 @@ const router = express.Router();
 
 const mainController = require('../app/controllers/mainController');
 const catalogueController = require('../app/controllers/catalogueController');
-
+const productController = require('../app/controllers/productController');
 
 
 
@@ -11,6 +11,8 @@ const catalogueController = require('../app/controllers/catalogueController');
 
 router.get('/', mainController.homePage);
 router.get('/catalogue', catalogueController.cataloguePage);
+router.get('/product/:id', productController.productDescription);
+
 
 
 module.exports = router;

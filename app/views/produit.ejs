@@ -2,16 +2,21 @@
 
 <main>
     <section>
-        <img class="img-detail" src="/docs/demande-client/00.assets/coffees/100955890.png" alt="Des grains de café dans un sac">
+        <img class="img-detail" src="/images/100955890.png" alt="Des grains de café dans un sac">
     </section>
     <section class="products-detail">
-        <h3 class="products-detail-title">Café du Pérou</h3>
-        <p class="products-detail-text">Découvrez le café du Pérou, une expérience gustative exceptionnelle née des montagnes majestueuses des Andes. Cultivé à des altitudes comprises entre 1 200 et 2 000 mètres, ce café unique bénéficie d'un climat idéal et d'un sol riche en nutriments. Les petits producteurs péruviens, passionnés par leur métier, appliquent des méthodes de culture traditionnelles et respectueuses de l'environnement, garantissant ainsi une qualité supérieure et une production durable.
-
-            Le café péruvien se distingue par ses arômes complexes et équilibrés, offrant une palette de saveurs allant des notes fruitées et florales aux touches subtiles de chocolat et de noix. Que vous soyez amateur de café léger et acidulé ou préfériez les breuvages plus corsés, le café du Pérou saura ravir vos papilles et enrichir vos moments de dégustation.
-            
-            Invitez l'excellence péruvienne dans votre quotidien et laissez-vous séduire par ce trésor des Andes, symbole d'authenticité et de passion.</p>
-            <a class="products-detail-link" href="">Catalogue</a>
+        <h3 class="products-detail-title"><%= product.name %></h3>
+        <p class="products-detail-text">
+          <ul>
+            <li>Description: <%= product.description %></li>
+            <li>Référence: <%= product.reference %></li>
+            <li>Origine: <%= product.origin %></li>
+            <li>Prix au kilo: <%= product.price %></li>
+            <li>Caractéristique principale: <%= product.feature %></li>
+            <li>Disponible: <%= product.available %></li>
+          </ul>
+        </p>
+            <a class="products-detail-link" href="/catalogue">Catalogue</a>
     </section>
   </main>
 

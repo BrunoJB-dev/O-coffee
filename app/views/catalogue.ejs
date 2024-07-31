@@ -10,11 +10,16 @@
             <label for="categorie"></label>
             <select class="products-select" name="categorie" id="categorie">
                 <option value="null" selected disabled>Catégorie</option>
-                <option value="latte">Latte</option>
+
+                <% coffees.forEach(coffee => {%>
+                    <option value="<%= coffee.feature %>"><%= coffee.feature %></option>
+                <% }) %>
+
+                <!--<option value="latte">Latte</option>
                 <option value="cappuccino">Cappuccino</option>
                 <option value="espresso">Espresso</option>
                 <option value="mocha">Mocha</option>
-                <option value="macchiato">Machiatto</option>
+                <option value="macchiato">Machiatto</option>-->
             </select>
             
         </form>
@@ -35,7 +40,7 @@
                             <li>Disponible: <%= coffee.available %></li>
                         </ul>
                     </p>
-                    <a class="card-link" href="">Découvrir</a>
+                    <a class="card-link" href="/product/<%= coffee.id %>">Découvrir</a>
 
                 </div>
 

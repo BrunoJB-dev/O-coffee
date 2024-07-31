@@ -9,7 +9,15 @@ const dataMapper = {
     }catch(error){
         console.log('Error in getAllProducts', error);
     }
-}
+},
+    async getProduct(id){
+        try{
+            const result = await database.query('SELECT * FROM coffee WHERE id = $1;', [id]);
+            return result.rows[0];
+        }catch(error){
+            console.log('Error in getProduct', error);
+        }
+    }
 };
 
 

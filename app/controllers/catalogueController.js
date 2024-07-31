@@ -8,8 +8,7 @@ const catalogueController = {
     }catch(error){
         console.log('Error executing query in catalogueController');
     }
-
   }
-}
+};
 
 module.exports = catalogueController;
