@@ -52,15 +52,18 @@ main{
     margin-left: 2rem;
 }
 .intro-article{
-    margin-top: 2rem;
+    margin-top: 6rem;
 }
 .intro-title{
     text-align: center;
+    font-size: 2rem;
     margin: 2rem;
 }
 .intro-text{
     text-align: center;
-    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 2;
+    margin-bottom: 6rem;
     margin-left: 4rem;
     margin-right: 4rem;
 }
@@ -233,6 +236,28 @@ main{
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+.shop-ambiance-title{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.shop-ambiance-text{
+    text-align: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+}
+.access{
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0;
+}
+.access-img{
+    max-width: 100%;
+    height: auto;
+    margin: 0 5rem;
 }
 
 
