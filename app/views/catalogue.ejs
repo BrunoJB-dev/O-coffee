@@ -20,7 +20,29 @@
         </form>
 
         <article class="products-showing">
-            <div class="products-card">
+
+            <% coffees.forEach((coffee) => { %>
+
+                <div class="products-card">
+                    <h3 class="card-title"><%= coffee.name %></h3>
+                    <p class="products-text">
+                        <ul>
+                            <li>Description: <%= coffee.description %></li>
+                            <li>Référence: <%= coffee.reference %></li>
+                            <li>Origine: <%= coffee.origin %></li>
+                            <li>Prix au kilo: <%= coffee.price %></li>
+                            <li>Caractéristique principale: <%= coffee.feature %></li>
+                            <li>Disponible: <%= coffee.available %></li>
+                        </ul>
+                    </p>
+                    <a class="card-link" href="">Découvrir</a>
+
+                </div>
+
+
+                <% }) %>
+
+            <!--<div class="products-card">
                 <h3 class="card-title">Espresso</h3>
                 <p class="products-text">
                     <ul>
@@ -62,7 +84,7 @@
                             </ul>
                         </p>
                         <a class="card-link" href="">Découvrir</a>
-                        </div>
+                        </div>-->
             
         </article>
         <button class="products-btn">Voir tout</button>
