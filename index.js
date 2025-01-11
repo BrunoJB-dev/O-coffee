@@ -13,9 +13,7 @@ app.set('views', path.join(__dirname, 'app', 'views'));
 
 app.use(express.static('public'));
 
-app.get('/', (req, res) => {
-    res.render('accueil');  // Remplace 'index' par 'accueil' ici
-});
+
 
 
 
