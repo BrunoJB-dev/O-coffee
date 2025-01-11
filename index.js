@@ -1,5 +1,21 @@
 require('dotenv').config();
 
+const { Pool } = require('pg');
+
+// Connexion directe
+const pool = new Pool({
+  connectionString: process.env.PG_URL,
+});
+
+pool.connect()
+  .then(() => console.log('Connected to the database!'))
+  .catch((err) => console.error('Database connection error:', err));
+
+// Exemple de requête
+pool.query('SELECT NOW()')
+  .then((res) => console.log('Current database time:', res.rows[0]))
+  .catch((err) => console.error('Error executing query:', err));
+
 const dotenv = require('dotenv');
 const express = require("express");
 const path = require("path");
@@ -13,7 +29,7 @@ app.set('views', path.join(__dirname, 'app', 'views'));
 
 app.use(express.static('public'));
 
-
+//PG_URL=postgres://ocoffee:ocoffee@localhost/ocoffee
 
 
 
